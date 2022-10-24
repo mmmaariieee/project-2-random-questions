@@ -3,11 +3,19 @@ import QuestionsContainer from  './QuestionsContainer';
 
 function GenerateQuestionForm() {
     const [generatedQuestions, setGeneratedQuestions] = useState([])
+    const [formData, setFormData] = useState('')
+
+
 
     useEffect(() => {
-        fetch('https://opentdb.com/api.php?amount=10')
+        fetch(`https://opentdb.com/api.php?amount=10&type=multiple`)
         .then(r => r.json())
-        .then(data => setGeneratedQuestions(data.results))
+        .then(data => {
+            const newGeneratedQuestions = data.results.map(question => {
+                return {...question, favorite: false, id: Math.random()}
+            })
+            setGeneratedQuestions(newGeneratedQuestions)
+        })
     }, [])
 
     return (
