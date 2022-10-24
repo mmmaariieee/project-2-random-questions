@@ -5,10 +5,16 @@ function GenerateQuestionForm() {
     const [generatedQuestions, setGeneratedQuestions] = useState([])
     const [formData, setFormData] = useState('')
 
+    function handleChange(e) {
+        const {name, value} = e.target
+        setFormData({
+            ...formData, [name]: value,
+        })
+    }
 
-
-    useEffect(() => {
-        fetch(`https://opentdb.com/api.php?amount=10&type=multiple`)
+    function handleSubmit(e) {
+        e.preventDefault()
+        fetch(`https://opentdb.com/api.php?amount=${formData.numberOfQuestions}&type=multiple`)
         .then(r => r.json())
         .then(data => {
             const newGeneratedQuestions = data.results.map(question => {
@@ -16,11 +22,23 @@ function GenerateQuestionForm() {
             })
             setGeneratedQuestions(newGeneratedQuestions)
         })
-    }, [])
+    }
+console.log(generatedQuestions)
+
+    // useEffect(() => {
+    //     fetch(`https://opentdb.com/api.php?amount=10&type=multiple`)
+    //     .then(r => r.json())
+    //     .then(data => {
+    //         const newGeneratedQuestions = data.results.map(question => {
+    //             return {...question, favorite: false, id: Math.random()}
+    //         })
+    //         setGeneratedQuestions(newGeneratedQuestions)
+    //     })
+    // }, [])
 
     return (
         <div>
-            <form>
+            <form onSubmit={handleSubmit}>
                 <label>Category:</label>
                 <select>
                     <option value="">Any Category</option>
@@ -54,7 +72,7 @@ function GenerateQuestionForm() {
                 </select>
 
                 <label>Number of questions:</label>
-                <input name="numberOfQuestions"/>
+                <input name="numberOfQuestions" onChange={handleChange}/>
                 <input type="submit" />
             </form>
             <QuestionsContainer randomQuestions={generatedQuestions}/>
