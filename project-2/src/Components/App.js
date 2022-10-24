@@ -1,7 +1,7 @@
 import React from "react";
-import AddQuestionForm from "./Components/AddQuestionForm";
-import GenerateQuestionForm from "./Components/GenerateQuestionForm";
-import NavBar from "./Components/NavBar";
+import AddQuestionForm from "./AddQuestionForm"
+import GenerateQuestionForm from "./GenerateQuestionForm";
+import NavBar from "./NavBar";
 
 function App() {
   return (
