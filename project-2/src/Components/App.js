@@ -2,6 +2,7 @@ import React from "react";
 import AddQuestionForm from "./AddQuestionForm"
 import GenerateQuestionForm from "./GenerateQuestionForm";
 import NavBar from "./NavBar";
+import FavoriteQuestions from "./FavoriteQuestions";
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <NavBar />
       <GenerateQuestionForm />
       <AddQuestionForm />
+      <FavoriteQuestions />
     </div>
   );
 }
