@@ -10,13 +10,6 @@
     {
       "category": "Entertainment: Music",
       "difficulty": "easy",
-      "question": "Who is the frontman of the band 30 Seconds to Mars?",
-      "correct_answer": "Jared Leto",
-      "id": 2
-    },
-    {
-      "category": "Entertainment: Music",
-      "difficulty": "easy",
       "question": "Kanye West&#039;s &quot;Gold Digger&quot; featured which Oscar-winning actor?",
       "correct_answer": "Jamie Foxx",
       "id": 3
