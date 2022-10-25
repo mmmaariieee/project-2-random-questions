@@ -11,10 +11,10 @@ function GenerateQuestionForm() {
             ...formData, [name]: value,
         })
     }
-
+    
     function handleSubmit(e) {
         e.preventDefault()
-        fetch(`https://opentdb.com/api.php?amount=${formData.numberOfQuestions}&type=multiple`)
+        fetch(`https://opentdb.com/api.php?amount=${formData.numberOfQuestions}&category=${formData.category}&difficulty=${formData.difficulty}&type=multiple`)
         .then(r => r.json())
         .then(data => {
             const newGeneratedQuestions = data.results.map(question => {
@@ -23,7 +23,6 @@ function GenerateQuestionForm() {
             setGeneratedQuestions(newGeneratedQuestions)
         })
     }
-console.log(generatedQuestions)
 
     // useEffect(() => {
     //     fetch(`https://opentdb.com/api.php?amount=10&type=multiple`)
@@ -40,32 +39,32 @@ console.log(generatedQuestions)
         <div>
             <form onSubmit={handleSubmit}>
                 <label>Category:</label>
-                <select>
+                <select name='category' onChange={handleChange}>
                     <option value="">Any Category</option>
-                    <option value="">General Knowledge</option>
-                    <option value="">Books</option>
-                    <option value="">Film</option>
-                    <option value="">Music</option>
-                    <option value="">Musicals & Theatres</option>
-                    <option value="">Television</option>
-                    <option value="">Video Games</option>
-                    <option value="">Board Games</option>
-                    <option value="">Science & Nature</option>
-                    <option value="">Computers</option>
-                    <option value="">Mathematics</option>
-                    <option value="">Mythology</option>
-                    <option value="">Sports</option>
-                    <option value="">Geography</option>
-                    <option value="">History</option>
-                    <option value="">Politics</option>
-                    <option value="">Art</option>
-                    <option value="">Celebrities</option>
-                    <option value="">Animals</option>
+                    <option value="9">General Knowledge</option>
+                    <option value="10">Books</option>
+                    <option value="11">Film</option>
+                    <option value="12">Music</option>
+                    <option value="13">Musicals & Theatres</option>
+                    <option value="14">Television</option>
+                    <option value="15">Video Games</option>
+                    <option value="16">Board Games</option>
+                    <option value="17">Science & Nature</option>
+                    <option value="18">Computers</option>
+                    <option value="19">Mathematics</option>
+                    <option value="20">Mythology</option>
+                    <option value="21">Sports</option>
+                    <option value="22">Geography</option>
+                    <option value="23">History</option>
+                    <option value="24">Politics</option>
+                    <option value="25">Art</option>
+                    <option value="26">Celebrities</option>
+                    <option value="27">Animals</option>
                 </select>
 
                 <label>Difficulty:</label>
-                <select>
-                    <option value="">Random</option>
+                <select name='difficulty' onChange={handleChange}>
+                    <option value="">Any Difficulty</option>
                     <option value="easy">Easy</option>
                     <option value="medium">Medium</option>
                     <option value="hard">Hard</option>
