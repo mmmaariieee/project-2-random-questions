@@ -1,0 +1,46 @@
+{
+  "Favorites": [
+    {
+      "id": 1,
+      "category": "Entertainment: Television",
+      "correct_answer": "Dexter",
+      "difficulty": "medium",
+      "question": "From what show is the character &quot;James Doakes&quot;?"
+    },
+    {
+      "category": "Entertainment: Music",
+      "difficulty": "easy",
+      "question": "Who is the frontman of the band 30 Seconds to Mars?",
+      "correct_answer": "Jared Leto",
+      "id": 2
+    },
+    {
+      "category": "Entertainment: Music",
+      "difficulty": "easy",
+      "question": "Kanye West&#039;s &quot;Gold Digger&quot; featured which Oscar-winning actor?",
+      "correct_answer": "Jamie Foxx",
+      "id": 3
+    },
+    {
+      "category": "Entertainment: Music",
+      "difficulty": "easy",
+      "question": "Kanye West&#039;s &quot;Gold Digger&quot; featured which Oscar-winning actor?",
+      "correct_answer": "Jamie Foxx",
+      "id": 4
+    },
+    {
+      "category": "Entertainment: Television",
+      "difficulty": "medium",
+      "question": "Who co-founded the YouTube Let&#039;s Play channel &quot;Game Grumps&quot; alongside Newgrounds animator Egoraptor?",
+      "correct_answer": "JonTron",
+      "id": 5
+    },
+    {
+      "category": "Mythology",
+      "difficulty": "easy",
+      "question": "Who was the King of Gods in Ancient Greek mythology?",
+      "correct_answer": "Zeus",
+      "id": 6
+    }
+  ]
+}

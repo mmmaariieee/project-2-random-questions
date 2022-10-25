@@ -4,6 +4,7 @@ import QuestionsContainer from  './QuestionsContainer';
 function GenerateQuestionForm() {
     const [generatedQuestions, setGeneratedQuestions] = useState([])
     const [formData, setFormData] = useState('')
+    const [favoriteQuestions, setFavoriteQuestions] = useState([])
 
     function handleChange(e) {
         const {name, value} = e.target
@@ -18,10 +19,14 @@ function GenerateQuestionForm() {
         .then(r => r.json())
         .then(data => {
             const newGeneratedQuestions = data.results.map(question => {
-                return {...question, favorite: false, id: Math.random()}
+                return {...question, id: Math.random()}
             })
             setGeneratedQuestions(newGeneratedQuestions)
         })
+    }
+
+    function handleAddFavorite(newFavorite) {
+        setFavoriteQuestions([...favoriteQuestions, newFavorite])
     }
 
     // useEffect(() => {
@@ -74,7 +79,7 @@ function GenerateQuestionForm() {
                 <input name="numberOfQuestions" onChange={handleChange}/>
                 <input type="submit" />
             </form>
-            <QuestionsContainer randomQuestions={generatedQuestions}/>
+            <QuestionsContainer randomQuestions={generatedQuestions} handleAddFavorite={handleAddFavorite}/>
         </div>
     )
 }
