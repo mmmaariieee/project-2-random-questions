@@ -1,10 +1,10 @@
 import React, {useState, useEffect} from "react";
 import QuestionsContainer from  './QuestionsContainer';
 
-function GenerateQuestionForm() {
+function GenerateQuestionForm({handleAddFavorite}) {
     const [generatedQuestions, setGeneratedQuestions] = useState([])
     const [formData, setFormData] = useState('')
-    const [favoriteQuestions, setFavoriteQuestions] = useState([])
+    
 
     function handleChange(e) {
         const {name, value} = e.target
@@ -22,13 +22,10 @@ function GenerateQuestionForm() {
                 return {...question, id: Math.random()}
             })
             setGeneratedQuestions(newGeneratedQuestions)
+            
         })
     }
-
-    function handleAddFavorite(newFavorite) {
-        setFavoriteQuestions([...favoriteQuestions, newFavorite])
-    }
-
+    
     // useEffect(() => {
     //     fetch(`https://opentdb.com/api.php?amount=10&type=multiple`)
     //     .then(r => r.json())
@@ -76,10 +73,10 @@ function GenerateQuestionForm() {
                 </select>
 
                 <label>Number of questions:</label>
-                <input name="numberOfQuestions" onChange={handleChange}/>
+                <input name="numberOfQuestions" placeholder="1 - 50 Questions" onChange={handleChange}/>
                 <input type="submit" />
             </form>
-            <QuestionsContainer randomQuestions={generatedQuestions} handleAddFavorite={handleAddFavorite}/>
+            <QuestionsContainer randomQuestions={generatedQuestions} handleAddFavorite={handleAddFavorite} />
         </div>
     )
 }

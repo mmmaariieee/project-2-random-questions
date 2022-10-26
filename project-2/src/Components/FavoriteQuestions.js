@@ -1,22 +1,14 @@
-import React, {useEffect, useState} from "react";
+import React from "react";
 import FavoriteCard from "./FavoriteCard";
 
-function FavoriteQuestions() {
-    const [favorites, setFavorites] = useState([])
-
-    useEffect(() => {
-        fetch('http://localhost:3001/Favorites')
-        .then(r => r.json())
-        .then(data => setFavorites(data))
-    })
-
+function FavoriteQuestions({favoriteQuestions, setFavoriteQuestions}) {
     function removeFavorite(id) {
-        const newFavorites = favorites.filter((question) => question.id !== id)
-        setFavorites(newFavorites)
+        const newFavorites = favoriteQuestions.filter((question) => question.id !== id)
+        setFavoriteQuestions(newFavorites)
     }
 
-    const favoritesList = favorites.map((favorite) => {
-        return <FavoriteCard key={favorite.id} favorite={favorite} removeFavorite={removeFavorite}/>
+    const favoritesList = favoriteQuestions.map((question) => {
+        return <FavoriteCard key={question.id} favorite={question} removeFavorite={removeFavorite}/>
     })
     return (
         <div>{favoritesList}</div>
