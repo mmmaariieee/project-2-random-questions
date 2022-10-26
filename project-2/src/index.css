@@ -2,6 +2,9 @@ body {
     font-family: 'Trebuchet MS', sans-serif;
     font-size: 16px;
 }
+html {
+    background-color: #022128;
+}
 
 .App {
     color: whitesmoke;
@@ -31,8 +34,8 @@ a {
 .GenerateQuestionForm {
     display:flex;
     justify-content: center;
-    margin-top: 200px;
-    margin-bottom: 200px;
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
 
 .AddQuestionForm {
