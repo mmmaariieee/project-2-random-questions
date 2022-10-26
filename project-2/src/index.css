@@ -17,7 +17,7 @@ html {
     flex-direction: row; 
     justify-content: space-around;
     align-items: center;
-    background-color: #00333f;
+    background-color: lightcoral;
     height: 100px;
     width: 100%;
 }
@@ -34,8 +34,7 @@ a {
 .GenerateQuestionForm {
     display:flex;
     justify-content: center;
-    margin-top: 100px;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
 
 .AddQuestionForm {
@@ -88,10 +87,13 @@ h1 {
 
 /* Question Container */
 .generated-questions {
-    display: flex;
+    display: inside;
     justify-content: center;
     background-color: #00333f;
     color:#00efe1;
+    padding: 20px;
+
+    margin: 10px
 }
 
 .save-button{
@@ -114,4 +116,12 @@ h1 {
 
 p{
     margin: 10px;
+}
+
+
+
+.questionsDiv {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    columns: 2;
 }

@@ -1,8 +1,20 @@
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
+import MyQuestions from "./MyQuestions";
 
 function AddQuestionForm() {
     const [inputtedData, setInputtedData] = useState('')
     const [myQuestions, setMyQuestions] = useState([])
+
+    useEffect(() => {
+        fetch('http://localhost:4001/MyQuestions')
+        .then(r => r.json())
+        .then(data => setMyQuestions(data))
+    }, [setMyQuestions])
+
+    function removeQuestion(id) {
+        const newMyQuestions = myQuestions.filter((question) => question.id !== id)
+        setMyQuestions(newMyQuestions)
+    }
 
     function updateMyQuestions(newQuestion) {
         setMyQuestions([...myQuestions, newQuestion])
@@ -53,6 +65,7 @@ function AddQuestionForm() {
                 <input type="submit" />
             </form>
         </div>
+        <MyQuestions myQuestions={myQuestions} removeQuestion={removeQuestion}/>
         </div>
     )
 }

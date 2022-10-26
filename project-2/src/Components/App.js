@@ -3,7 +3,8 @@ import AddQuestionForm from "./AddQuestionForm"
 import GenerateQuestionForm from "./GenerateQuestionForm";
 import NavBar from "./NavBar";
 import FavoriteQuestions from "./FavoriteQuestions";
-import {BrowserRouter, Routes, Route} from 'react-router-dom'
+import {BrowserRouter, Routes, Route} from 'react-router-dom';
+// import topBarImage from '/home/trevor14/Development/code/project-2/project-2-random-questions/project-2/src/robotic top bar picture.png'
 
 function App() {
   const [favoriteQuestions, setFavoriteQuestions] = useState([])

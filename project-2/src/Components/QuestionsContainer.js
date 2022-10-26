@@ -7,9 +7,9 @@ const questionsList = randomQuestions.map((question) => {
 })
     
     return(
-        <>
+        <div className='questionsDiv'>
             {questionsList}
-        </>
+        </div>
     )
 }
 
