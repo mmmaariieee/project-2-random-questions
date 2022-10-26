@@ -1,0 +1,114 @@
+body {
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+}
+
+.App {
+    color: whitesmoke;
+    background-color: #022128;
+}
+
+/* NavBar Stuff */  
+.NavBar{
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-around;
+    align-items: center;
+    background-color: #00333f;
+    height: 100px;
+    width: 100%;
+}
+
+a {
+    color: #00efe1;
+    font-size: x-large;
+}
+
+/* Forms */
+.GenerateQuestionDiv{
+    padding: 5%;
+}
+.GenerateQuestionForm {
+    display:flex;
+    justify-content: center;
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
+
+.AddQuestionForm {
+    display:flex;
+    justify-content: center;
+    padding: 50px;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+label {
+    margin-left: 20px;
+    font-size: x-large;
+}
+
+.custom-select {
+    font-family: Arial;
+    color: whitesmoke;
+    background-color: #00333f;
+    border-radius: 10px;
+    margin-left: 10px;
+  }
+
+.form-input {
+    font-family: Arial;
+    color: whitesmoke;
+    background-color: #00333f;
+    border-radius: 10px;
+    border-color: whitesmoke;
+    margin-left: 10px;
+}
+
+.submit-button {
+    border-radius: 10px;
+    font-family: Arial;
+    color: whitesmoke;
+    background-color: #00333f;
+    border-color: whitesmoke;
+    margin-left: 5px;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+}
+
+/* Question Container */
+.generated-questions {
+    display: flex;
+    justify-content: center;
+    background-color: #00333f;
+    color:#00efe1;
+}
+
+.save-button{
+    border-radius: 10px;
+    font-family: Arial;
+    color: whitesmoke;
+    background-color: #00333f;
+    border-color: whitesmoke;
+    margin-left: 5px;
+}
+
+.answer-button{
+    border-radius: 10px;
+    font-family: Arial;
+    color: whitesmoke;
+    background-color: #00333f;
+    border-color: whitesmoke;
+    margin-left: 5px;
+}
+
+p{
+    margin: 10px;
+}

@@ -35,6 +35,8 @@ function AddQuestionForm() {
 
     return (
         <div>
+        <h1>Add A Question</h1>
+        <div className="AddQuestionForm">
             <form onSubmit={addQuestion}>
             <label>Category:</label>
                 <br />
@@ -50,6 +52,7 @@ function AddQuestionForm() {
                 <br />
                 <input type="submit" />
             </form>
+        </div>
         </div>
     )
 }

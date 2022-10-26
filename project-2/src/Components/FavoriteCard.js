@@ -13,7 +13,7 @@ function FavoriteCard({favorite, removeFavorite}) {
 
 
     return (
-        <div>
+        <div className="FavoriteCard">
             <p>Question:</p>
             <p>{category}</p>
             <p>{difficulty}</p>

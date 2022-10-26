@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from "react";
+import React, {useState} from "react";
 import QuestionsContainer from  './QuestionsContainer';
 
 function GenerateQuestionForm({handleAddFavorite}) {
@@ -38,11 +38,11 @@ function GenerateQuestionForm({handleAddFavorite}) {
     // }, [])
 
     return (
-        <div>
-            <form onSubmit={handleSubmit}>
+        <div className="GenerateQuestionDiv">
+            <form className="GenerateQuestionForm" onSubmit={handleSubmit}>
                 <label>Category:</label>
-                <select name='category' onChange={handleChange}>
-                    <option value="">Any Category</option>
+                <select className="custom-select" name='category' onChange={handleChange}>
+                    <option value="">Select Category</option>
                     <option value="9">General Knowledge</option>
                     <option value="10">Books</option>
                     <option value="11">Film</option>
@@ -65,16 +65,16 @@ function GenerateQuestionForm({handleAddFavorite}) {
                 </select>
 
                 <label>Difficulty:</label>
-                <select name='difficulty' onChange={handleChange}>
-                    <option value="">Any Difficulty</option>
+                <select className="custom-select" name='difficulty' onChange={handleChange}>
+                    <option value="">Select Difficulty</option>
                     <option value="easy">Easy</option>
                     <option value="medium">Medium</option>
                     <option value="hard">Hard</option>
                 </select>
 
                 <label>Number of questions:</label>
-                <input name="numberOfQuestions" placeholder="1 - 50 Questions" onChange={handleChange}/>
-                <input type="submit" />
+                <input className="form-input" name="numberOfQuestions" placeholder="1 - 50 Questions" onChange={handleChange}/>
+                <input className="submit-button" type="submit" />
             </form>
             <QuestionsContainer randomQuestions={generatedQuestions} handleAddFavorite={handleAddFavorite} />
         </div>

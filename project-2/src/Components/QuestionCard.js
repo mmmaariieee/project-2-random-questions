@@ -64,11 +64,11 @@ function QuestionCard({questionData, handleAddFavorite}) {
     // end of code to handle replacements
 
     return(
-        <div >
+        <div className="generated-questions">
             <p>{finalQuestionFix}</p>
             <p>{category}</p>
             <p>{difficulty}</p>
-            <button onClick={addToFavorites} >
+            <button className="save-button" onClick={addToFavorites} >
                 <p onClick={handleChange}>{isSaved ? "Saved!" : 'Save!'}</p>
             </button>
             <AnswerDetails handleClick={handleClick} isShown={isShown} correct_answer={correct_answer}/>
