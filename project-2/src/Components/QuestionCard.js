@@ -3,6 +3,7 @@ import AnswerDetails from "./AnswerDetails";
 
 
 function QuestionCard({questionData, handleAddFavorite}) {
+    
     const [isShown, setIsShown] = useState(false)
     const [isSaved, setIsSaved] = useState(false)
 
