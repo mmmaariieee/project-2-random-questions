@@ -3,12 +3,16 @@ body {
     font-size: 16px;
 }
 html {
-    background-color: #022128;
+    background-color: #540b0e;
 }
 
 .App {
-    color: whitesmoke;
-    background-color: #022128;
+    color: #fff3b0;
+    background-color: #540b0e;
+}
+
+.logo{
+    width: 100%;
 }
 
 /* NavBar Stuff */  
@@ -17,13 +21,13 @@ html {
     flex-direction: row; 
     justify-content: space-around;
     align-items: center;
-    background-color: lightcoral;
+    background-color: #e09f3e;
     height: 100px;
     width: 100%;
 }
 
 a {
-    color: #00efe1;
+    color: #9e2a2b;
     font-size: x-large;
 }
 
@@ -56,27 +60,27 @@ label {
 
 .custom-select {
     font-family: Arial;
-    color: whitesmoke;
-    background-color: #00333f;
+    color: #fff3b0;
+    background-color: #540b0e;
     border-radius: 10px;
     margin-left: 10px;
   }
 
 .form-input {
     font-family: Arial;
-    color: whitesmoke;
-    background-color: #00333f;
+    color: #fff3b0;
+    background-color: #540b0e;
     border-radius: 10px;
-    border-color: whitesmoke;
+    border-color: #fff3b0;
     margin-left: 10px;
 }
 
 .submit-button {
     border-radius: 10px;
     font-family: Arial;
-    color: whitesmoke;
-    background-color: #00333f;
-    border-color: whitesmoke;
+    color: #fff3b0;
+    background-color: #540b0e;
+    border-color: #fff3b0;
     margin-left: 5px;
 }
 
@@ -89,8 +93,8 @@ h1 {
 .generated-questions {
     display: inside;
     justify-content: center;
-    background-color: #00333f;
-    color:#00efe1;
+    background-color: #9e2a2b;
+    color:#fff3b0;
     padding: 20px;
 
     margin: 10px
@@ -99,18 +103,18 @@ h1 {
 .save-button{
     border-radius: 10px;
     font-family: Arial;
-    color: whitesmoke;
-    background-color: #00333f;
-    border-color: whitesmoke;
+    color: #fff3b0;
+    background-color: #9e2a2b;
+    border-color: #e09f3e;
     margin-left: 5px;
 }
 
 .answer-button{
     border-radius: 10px;
     font-family: Arial;
-    color: whitesmoke;
-    background-color: #00333f;
-    border-color: whitesmoke;
+    color: #fff3b0;
+    background-color: #9e2a2b;
+    border-color: #e09f3e;
     margin-left: 5px;
 }
 
