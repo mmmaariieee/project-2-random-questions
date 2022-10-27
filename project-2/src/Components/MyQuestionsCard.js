@@ -15,9 +15,9 @@ function MyQuestionCard({questionInfo, removeQuestion}) {
     return (
         <div className="generated-questions">
             <h3>Question:</h3>
-            <p>{category}</p>
-            <p>{question}</p>
-            <p>{answer}</p>
+            <p>Category: {category}</p>
+            <p>Question: {question}</p>
+            <p>Answer: {answer}</p>
             <button className="save-button" onClick={handleDelete}>Remove</button>
         </div>
     )

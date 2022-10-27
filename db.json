@@ -41,6 +41,13 @@
       "question": "Which member of the Wu-Tang Clan had only one verse in their debut album Enter the Wu-Tang (36 Chambers)?",
       "correct_answer": "Masta Killa",
       "id": 11
+    },
+    {
+      "category": "Entertainment: Music",
+      "difficulty": "medium",
+      "question": "What musician made the song &quot;Fuckin` Perfect&quot; in 2010?",
+      "correct_answer": "P!nk",
+      "id": 12
     }
   ]
 }

@@ -65,9 +65,9 @@ function QuestionCard({questionData, handleAddFavorite}) {
 
     return(
         <div className="generated-questions">
-            <p>{finalQuestionFix}</p>
-            <p>{category}</p>
-            <p>{difficulty}</p>
+            <p>Question: {finalQuestionFix}</p>
+            <p>Category: {category}</p>
+            <p>difficulty:{difficulty}</p>
             <button className="save-button" onClick={addToFavorites} >
                 <p onClick={handleChange}>{isSaved ? "Saved!" : 'Save!'}</p>
             </button>
