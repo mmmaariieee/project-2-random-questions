@@ -35,6 +35,7 @@ a {
 .GenerateQuestionDiv{
     padding: 5%;
 }
+
 .GenerateQuestionForm {
     display:flex;
     justify-content: center;
@@ -125,6 +126,18 @@ p{
 
 
 .questionsDiv {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    columns: 2;
+}
+
+.favoriteCard{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    columns: 2;
+}
+
+.myQuestionCard{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     columns: 2;

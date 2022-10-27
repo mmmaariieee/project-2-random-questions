@@ -6,7 +6,7 @@ function MyQuestions({myQuestions, removeQuestion}) {
     return <MyQuestionCard key={question.id} questionInfo={question} removeQuestion={removeQuestion}/>
 })
     return(
-        <div>
+        <div className="myQuestionCard">
             {questionList}
         </div>
     )

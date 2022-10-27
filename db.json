@@ -13,6 +13,34 @@
       "question": "Who is the lead singer of Green Day?",
       "correct_answer": "Billie Joe Armstrong",
       "id": 7
+    },
+    {
+      "category": "Entertainment: Music",
+      "difficulty": "hard",
+      "question": "Who was the original drummer for The Beatles?",
+      "correct_answer": "Tommy Moore",
+      "id": 8
+    },
+    {
+      "category": "Entertainment: Music",
+      "difficulty": "hard",
+      "question": "Who was the original drummer for The Beatles?",
+      "correct_answer": "Tommy Moore",
+      "id": 9
+    },
+    {
+      "category": "Entertainment: Music",
+      "difficulty": "hard",
+      "question": "Which of these is NOT a song featured on the Lockjaw EP released in 2013 by Flume &amp; Chet Faker?",
+      "correct_answer": "Left Alone",
+      "id": 10
+    },
+    {
+      "category": "Entertainment: Music",
+      "difficulty": "hard",
+      "question": "Which member of the Wu-Tang Clan had only one verse in their debut album Enter the Wu-Tang (36 Chambers)?",
+      "correct_answer": "Masta Killa",
+      "id": 11
     }
   ]
 }

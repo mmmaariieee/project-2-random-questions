@@ -11,7 +11,7 @@ function FavoriteQuestions({favoriteQuestions, setFavoriteQuestions}) {
         return <FavoriteCard key={question.id} favorite={question} removeFavorite={removeFavorite}/>
     })
     return (
-        <div className="Favorites">{favoritesList}</div>
+        <div className="favoriteCard">{favoritesList}</div>
     )
 }
 

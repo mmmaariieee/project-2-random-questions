@@ -13,12 +13,12 @@ function MyQuestionCard({questionInfo, removeQuestion}) {
 
 
     return (
-        <div>
+        <div className="generated-questions">
             <h3>Question:</h3>
             <p>{category}</p>
             <p>{question}</p>
             <p>{answer}</p>
-            <button onClick={handleDelete}>Remove</button>
+            <button className="save-button" onClick={handleDelete}>Remove</button>
         </div>
     )
 }

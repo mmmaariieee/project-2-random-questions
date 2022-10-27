@@ -13,13 +13,13 @@ function FavoriteCard({favorite, removeFavorite}) {
 
 
     return (
-        <div className="FavoriteCard">
+        <div className="generated-questions">
             <p>Question:</p>
             <p>{category}</p>
             <p>{difficulty}</p>
             <p>{question}</p>
             <p>{correct_answer}</p>
-            <button onClick={handleDelete}>Remove</button>
+            <button className="save-button" onClick={handleDelete}>Remove</button>
         </div>
     )
 }
