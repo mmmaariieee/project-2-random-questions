@@ -10,8 +10,12 @@ function FavoriteQuestions({favoriteQuestions, setFavoriteQuestions}) {
     const favoritesList = favoriteQuestions.map((question) => {
         return <FavoriteCard key={question.id} favorite={question} removeFavorite={removeFavorite}/>
     })
+
     return (
-        <div className="favoriteCard">{favoritesList}</div>
+        <div>
+            <h1>Favorite Questions:</h1>
+            <div className="favoriteCard">{favoritesList}</div>
+        </div>
     )
 }
 

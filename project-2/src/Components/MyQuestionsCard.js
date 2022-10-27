@@ -1,16 +1,16 @@
 import React from "react";
 
 function MyQuestionCard({questionInfo, removeQuestion}) {
+
     const {id, category, question, answer} = questionInfo
 
+    //Delete request for questions
     function handleDelete() {
         fetch(`http://localhost:4001/MyQuestions/${id}`, {
             method: "Delete",
         })
         removeQuestion(id)
     }
-
-
 
     return (
         <div className="generated-questions">

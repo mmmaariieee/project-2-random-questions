@@ -2,8 +2,12 @@ import React, {useState, useEffect} from "react";
 import MyQuestions from "./MyQuestions";
 
 function AddQuestionForm() {
+    
     const [inputtedData, setInputtedData] = useState('')
     const [myQuestions, setMyQuestions] = useState([])
+
+
+    // fetch for questions inputted from AddQuestionForm
 
     useEffect(() => {
         fetch('http://localhost:4001/MyQuestions')
@@ -11,15 +15,14 @@ function AddQuestionForm() {
         .then(data => setMyQuestions(data))
     }, [setMyQuestions])
 
+    // Removing questions function for delete request
     function removeQuestion(id) {
         const newMyQuestions = myQuestions.filter((question) => question.id !== id)
         setMyQuestions(newMyQuestions)
     }
 
-    function updateMyQuestions(newQuestion) {
-        setMyQuestions([...myQuestions, newQuestion])
-    }
 
+    //  functions to handle post request and update myQuestions array
     function handleInput(e) {
         const {name, value} = e.target
         setInputtedData({
@@ -43,6 +46,10 @@ function AddQuestionForm() {
         })
         .then(r => r.json())
         .then(data => updateMyQuestions(data))
+    }
+
+    function updateMyQuestions(newQuestion) {
+        setMyQuestions([newQuestion, ...myQuestions])
     }
 
     return (

@@ -5,6 +5,12 @@
       "question": "1 + 1?",
       "answer": "2",
       "id": 1
+    },
+    {
+      "category": "Books",
+      "question": "How many books are in J. K. Rowlings hit series \"Harry Potter\"",
+      "answer": "7",
+      "id": 2
     }
   ]
 }

@@ -48,6 +48,27 @@
       "question": "What musician made the song &quot;Fuckin` Perfect&quot; in 2010?",
       "correct_answer": "P!nk",
       "id": 12
+    },
+    {
+      "category": "Celebrities",
+      "difficulty": "easy",
+      "question": "Which celebrity announced his presidency in 2015?",
+      "correct_answer": "Kanye West",
+      "id": 13
+    },
+    {
+      "category": "Celebrities",
+      "difficulty": "easy",
+      "question": "Which celebrity announced his presidency in 2015?",
+      "correct_answer": "Kanye West",
+      "id": 14
+    },
+    {
+      "category": "Entertainment: Television",
+      "difficulty": "medium",
+      "question": "Who was the star of the TV series &quot;24&quot;?",
+      "correct_answer": "Kiefer Sutherland",
+      "id": 15
     }
   ]
 }
