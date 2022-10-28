@@ -6,6 +6,7 @@ import FavoriteQuestions from "./FavoriteQuestions";
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import logo from '/home/trevor14/Development/code/project-2/project-2-random-questions/project-2/src/logo.png'
 
+
 function App() {
   const [favoriteQuestions, setFavoriteQuestions] = useState([])
 
@@ -17,7 +18,7 @@ function App() {
 
   function handleAddFavorite(newFavorite) {
     setFavoriteQuestions([newFavorite, ...favoriteQuestions])
-}
+  }
 
   return (
   <div className="App">
