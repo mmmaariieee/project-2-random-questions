@@ -59,9 +59,14 @@ function QuestionCard({questionData, handleAddFavorite}) {
         return match === '&rdquo;' ? '"' : '"';
     })
 
-    let finalQuestionFix = fixFour.replace(/(&amp;|&)/g, function(match){
+    let fixFive = fixFour.replace(/(&amp;|&)/g, function(match){
         return match === '&amp;' ? '&' : '&';
     })
+
+    let finalQuestionFix = fixFive.replace(/Which of these|Which/g, function(match){
+        return match === 'Which of these' ? 'Which' : 'Which';
+    })
+
     // end of code to handle replacements
 
     return(

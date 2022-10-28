@@ -40,7 +40,7 @@ function GenerateQuestionForm({handleAddFavorite}) {
 
     return (
         <div>
-            <h1>Get Questions!</h1>
+            <h1>Trivia Question Generator!</h1>
             <div className="GenerateQuestionDiv">
                 <form className="GenerateQuestionForm" onSubmit={handleSubmit}>
                     <label>Category:</label>
@@ -79,7 +79,7 @@ function GenerateQuestionForm({handleAddFavorite}) {
                     <input className="form-input" name="numberOfQuestions" placeholder="1 - 50 Questions" onChange={handleChange}/>
                     <input className="submit-button" type="submit" />
                 </form>
-                <h3 className="or">Or</h3>
+                <h3 className="or">OR</h3>
                 <button className="tenQuestionsButton" onClick={tenRandomQuestions}>Get 10 Random Questions!</button>
                 <QuestionsContainer randomQuestions={generatedQuestions} handleAddFavorite={handleAddFavorite} />
             </div>
