@@ -4,7 +4,7 @@ import GenerateQuestionForm from "./GenerateQuestionForm";
 import NavBar from "./NavBar";
 import FavoriteQuestions from "./FavoriteQuestions";
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
-import logo from '/home/trevor14/Development/code/project-2/project-2-random-questions/project-2/src/logo.png'
+import logo from '../logo.png'
 
 
 function App() {
